@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "SkillRack Patch",
+  "description": "Allows you to open other tabs and programs",
+  "version": "2.0",
+
+"browser_action": {
+    "default_icon": "icon.png"
+  },
+
+"content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery.js","dummy.js"],
+      "run_at":"document_start"
+    }
+  ],
+ "background":{
+            "scripts":["background.js"],
+	    "persistent": false
+        },
+  "permissions": [
+    "activeTab"
+  ]
+}
