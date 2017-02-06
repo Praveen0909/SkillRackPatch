@@ -1,26 +1,20 @@
 {
-  "manifest_version": 2,
-
-  "name": "SkillRack Patch",
-  "description": "Allows you to open other tabs and programs",
-  "version": "2.0",
-
-"browser_action": {
-    "default_icon": "icon.png"
-  },
-
-"content_scripts": [
-    {
-      "matches": ["http://*/*"],
-      "js": ["jquery.js","dummy.js"],
-      "run_at":"document_start"
-    }
-  ],
- "background":{
-            "scripts":["background.js"],
-	    "persistent": false
-        },
-  "permissions": [
-    "activeTab"
-  ]
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.js", "dummy.js" ],
+      "matches": [ "http://localhost:8080/Cybertrix/index.html" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Allows you to open other tabs and programs",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzG7oUl8wKnZ5HN1clK0asVy3xHX5V6/vZmYw0EIcn9iZaBAoPv7D9AF65Lkr0Ewd+VZsTrfsEdcyVOBsfsj+lOaLiE3T+3FR7b2JaSaVL9TVEgyPVnIZhsWmUA8pW7EqKbDKlNhD8MFlKwvN6TczOE2HqiJUpX8TosBL2A3JJeat1JZLkkfcowj/2DdMEhEarFBPoXqQzPbZv3yIs615UiTAGut++HFBg8z3uXAeU2yJ2gs0x4lMZttssa0xjuCBFHOMdcloGXKIHhLI/zdBohoRqZNe0/lFbsm8/qWREXerfypcI3FeqlGDtw5VfdQLhPfRMi8REufVS6JwqjHHawIDAQAB",
+   "manifest_version": 2,
+   "name": "SkillRack Patch",
+   "permissions": [ "activeTab" ],
+   "version": "2.0"
 }
