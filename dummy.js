@@ -1,5 +1,5 @@
 $(document).ready(function(){
-var a=$("#abc")[0];
+//var a=$("#abc")[0];
 //console.log($("#abc")[0].getAttribute("type"));
 
 
@@ -10,9 +10,9 @@ return false;
 };
 
 
-a.setAttribute("type","button");
-a.setAttribute("id","efg");
-console.log($("#efg")[0].getAttribute("type"));
+//a.setAttribute("type","button");
+//a.setAttribute("id","efg");
+//console.log($("#efg")[0].getAttribute("type"));
 
 
 });

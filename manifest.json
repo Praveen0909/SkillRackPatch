@@ -8,7 +8,7 @@
    },
    "content_scripts": [ {
       "js": [ "jquery.js", "dummy.js" ],
-      "matches": [ "http://localhost:8080/Cybertrix/index.html" ],
+      "matches": [ "http://*/*" ],
       "run_at": "document_start"
    } ],
    "description": "Allows you to open other tabs and programs",
