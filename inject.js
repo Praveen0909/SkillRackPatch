@@ -13,8 +13,15 @@ function tempAlert(msg,duration)
 var a=$("#mp")[0];
 //console.log($("#mp")[0].getAttribute("type"));
 
+window.focus=function(){
+  $("#j_id_2o").remove();
+  $("#j_id_2o_modal").remove();
 
+};
 window.onblur=function(){
+  $("#j_id_2o").remove();
+  $("#j_id_2o_modal").remove();
+
 return false;
 
 };
@@ -30,10 +37,6 @@ a.setAttribute("id","efg");
 a.setAttribute("name","efg");
 console.log("removed");
 alert("Patch added successfully");
- setTimeout(function(){
-  $("#j_id_2o").hide();
-  $("#j_id_2o_modal").hide();
- },1001);
 }
 else
 {
