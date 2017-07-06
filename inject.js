@@ -10,18 +10,19 @@ function tempAlert(msg,duration)
  document.body.appendChild(el);
 }
 
+function remover(){
+  $("#j_id_2o").remove();
+  $("#j_id_29").remove();
+  $("#j_id_2o_modal").remove();
+  $(".ui-dialog-mask").remove();
+	setTimeout(remover,1001);	
+ }
+
 var a=$("#mp")[0];
 //console.log($("#mp")[0].getAttribute("type"));
 
-window.focus=function(){
-  $("#j_id_2o").remove();
-  $("#j_id_2o_modal").remove();
 
-};
 window.onblur=function(){
-  $("#j_id_2o").remove();
-  $("#j_id_2o_modal").remove();
-
 return false;
 
 };
@@ -37,6 +38,7 @@ a.setAttribute("id","efg");
 a.setAttribute("name","efg");
 console.log("removed");
 alert("Patch added successfully");
+ setTimeout(remover,1001);
 }
 else
 {
