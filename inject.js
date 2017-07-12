@@ -13,6 +13,7 @@ function tempAlert(msg,duration)
 function remover(){
   $("#j_id_2o").remove();
   $("#j_id_29").remove();
+  $("#j_id_2t").remove();	
   $("#j_id_2o_modal").remove();
   $(".ui-dialog-mask").remove();
 	setTimeout(remover,1001);	
